@@ -1,0 +1,22 @@
+[package]
+name = "bard-api-rs"
+version = "0.1.0"
+edition = "2021"
+description = "Non official Google Bard Rust client library. Use at your own risk."
+license = "Unlicense"
+repository = "https://github.com/longfangsong/bard-api-rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = "0.8.5"
+serde = { version = "1.0.163", features = ["derive"] }
+serde_json = "1.0"
+cookie = "0.17.0"
+reqwest = { version = "0.11.18", features = ["json"] }
+regex = "1.8.1"
+
+[dev-dependencies]
+tokio = { version = "1.28.1", features = ["macros", "rt-multi-thread"] }
+ezio = "0.1.2"
+clap = { version = "4.2.2", features = ["derive"] }
